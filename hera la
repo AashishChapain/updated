@@ -89,6 +89,17 @@ int send()
 	}
 	else
 	{
+		char ans;
+		cout << "...do you want your ip (y/n)..." << endl;
+		cin >> ans;
+		if (ans == 'y')
+		{
+			system("cls");
+
+			system("C:/Windows/System32/ipconfig.exe");
+
+			system("pause");
+		}
 		system("cls");
 		cout << "waiting..." << endl;
 		WSADATA wsData;
